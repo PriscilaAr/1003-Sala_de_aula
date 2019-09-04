@@ -4,15 +4,15 @@ from django.db import models
 
 class Aluno(models.Model):
     nome_aluno = models.CharField(
-        max_length=50,
+        max_length=255,
     )    
 
-    idade_aluno = models.CharField(
-        max_length=3,
+    idade_aluno = models.IntegerField(
+        max_length=4,
     )
 
-    email_aluno = models.CharField(
-        max_length=50,
+    email_aluno = models.EmailField(
+        max_length=255,
     )
     
     def __str__(self):
