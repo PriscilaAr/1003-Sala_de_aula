@@ -14,5 +14,6 @@ class Aluno(models.Model):
     email_aluno = models.CharField(
         max_length=50,
     )
+    
     def __str__(self):
         return self.nome_aluno
